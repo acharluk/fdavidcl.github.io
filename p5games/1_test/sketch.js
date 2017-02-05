@@ -38,7 +38,7 @@ function draw()
   beginShape();
   for (var i=0; i<n; i++) {
     var ang = map(i, 0, n, 0, 6.283);
-    var rad = map(noise(i*(nfAng.value() / 100), frameCount*nfTime), 0, 1, minRad, maxRad);
+    var rad = map(noise(i*(nfAng.value() / 1000), frameCount*nfTime), 0, 1, minRad, maxRad);
     var x = rad * cos(ang);
     var y = rad * sin(ang);
     curveVertex(x, y);
