@@ -21,6 +21,7 @@ var nfAng;//0.005;
 var nfTime = 0.002;
 var fillColor = 255;
 var acc = 0.07;
+var nfAcc;
 
 function setup() {
     createCanvas(1024, 1024);
@@ -28,6 +29,7 @@ function setup() {
     noFill();
    
     nfAng = createSlider(5,100,1);
+    nfAcc = createSlider(1,10000,1);
 }
 
 function draw() 
@@ -44,7 +46,7 @@ function draw()
     curveVertex(x, y);
   }
   endShape(CLOSE);
-  //nfAng+=0.000001;
+  nfAng+= nfAcc.value() * 0.000001;
     if (fillColor > 0) {
         fillColor -= acc;
         acc *= 1.0009;
