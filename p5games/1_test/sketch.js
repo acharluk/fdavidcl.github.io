@@ -14,7 +14,7 @@ function draw() {
 */
 
 
-var n;//1000;
+var n = 1000;
 var minRad = 10;
 var maxRad = 570;
 var nfAng;//0.005;
@@ -27,8 +27,7 @@ function setup() {
     background(0);
     noFill();
    
-  n = 1000;//createSlider(0,1000,10);
-  nfAng = createSlider(1,1000,1) / 1000;
+    nfAng = createSlider(5,100,1) / 100;
 }
 
 function draw() 
