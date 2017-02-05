@@ -29,7 +29,7 @@ function setup() {
     noFill();
    
     nfAng = createSlider(5,100,1);
-    nfAcc = createSlider(1,10000,1);
+    nfAcc = createSlider(0,10000,1);
 }
 
 function draw() 
