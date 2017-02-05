@@ -14,10 +14,10 @@ function draw() {
 */
 
 
-var n = 1000;
+var n = createSlider(0,1000,10);//1000;
 var minRad = 10;
 var maxRad = 570;
-var nfAng = 0.005;
+var nfAng = createSlider(0,1,0.001);//0.005;
 var nfTime = 0.002;
 var fillColor = 255;
 var acc = 0.07;
