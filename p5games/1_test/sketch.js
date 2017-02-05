@@ -28,7 +28,7 @@ function setup() {
     noFill();
    
   n = 1000;//createSlider(0,1000,10);
-  nfAng = createSlider(0,1,0.001);
+  nfAng = createSlider(1,1000,1) / 1000;
 }
 
 function draw() 
