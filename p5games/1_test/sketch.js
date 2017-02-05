@@ -17,7 +17,7 @@ function draw() {
 var n = 1000;
 var minRad = 10;
 var maxRad = 570;
-var nfAng;//0.005;
+var nfAng = 0.005;
 var nfTime = 0.002;
 var fillColor = 255;
 var acc = 0.07;
@@ -28,7 +28,7 @@ function setup() {
     background(0);
     noFill();
    
-    nfAng = createSlider(5,100,1);
+    //nfAng = createSlider(5,100,1);
     nfAcc = createSlider(0,10000,1);
 }
 
@@ -40,7 +40,7 @@ function draw()
   beginShape();
   for (var i=0; i<n; i++) {
     var ang = map(i, 0, n, 0, 6.283);
-    var rad = map(noise(i*(nfAng.value() / 1000), frameCount*nfTime), 0, 1, minRad, maxRad);
+    var rad = map(noise(i*(nfAng), frameCount*nfTime), 0, 1, minRad, maxRad);
     var x = rad * cos(ang);
     var y = rad * sin(ang);
     curveVertex(x, y);
