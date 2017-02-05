@@ -31,7 +31,8 @@ function setup() {
    
     //nfAng = createSlider(5,100,1);
     nfAcc = createSlider(0,5000,1);
-    alpha = createSlider(0, 255, 1, 25);
+    alpha = createSlider(0, 255, 1);
+    alpha.value(25);
 }
 
 function draw() 
