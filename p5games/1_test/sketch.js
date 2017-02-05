@@ -27,7 +27,7 @@ function setup() {
     background(0);
     noFill();
    
-  n = createSlider(0,1000,10);
+  n = 1000;//createSlider(0,1000,10);
   nfAng = createSlider(0,1,0.001);
 }
 
