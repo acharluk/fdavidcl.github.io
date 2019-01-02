@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Titlebar</title>
+    <style>
+    #titlebar {
+        width: 800px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        background: #333;
+    }
+
+    #titlebar>p {
+        position: relative;
+        float: left;
+
+        margin: 0;
+        margin-top: 4px;
+        margin-left: 5px;
+
+        color: #eee;
+        font-family: monospace;
+        font-size: 14pt;
+
+        user-select: none;
+    }
+
+    #titlebar>a {
+        display: block;
+        float: right;
+        padding: 4px 12px;
+        font-size: 14pt;
+        color: white;
+        text-decoration: none;
+    }
+
+    #titlebar>a:hover {
+        background: #777;
+    }
+
+    #titlebar>a#btn-close:hover {
+        background: #c00;
+    }
+    </style>
+</head>
+<body>
+    <div id="titlebar">
+        <p>Explorer</p>
+        <a href="#" id="btn-close">x</a>
+        <a href="#" id="btn-maximize">o</a>
+        <a href="#" id="btn-minimize">-</a>
+    </div>
+</body>
+</html>
